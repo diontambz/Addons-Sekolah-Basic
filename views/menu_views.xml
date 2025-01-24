@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu Root -->
+    <menuitem id="menu_addons_sekolah_root" name="Sekolah" sequence="10"/>
+
+    <!-- Menu Siswa -->
+    <menuitem id="menu_siswa" name="Siswa" parent="menu_addons_sekolah_root" action="action_siswa" sequence="10"/>
+
+    <!-- Menu Kelas -->
+    <menuitem id="menu_kelas" name="Kelas" parent="menu_addons_sekolah_root" sequence="20"/>
+    <menuitem id="menu_kelas_data" name="Kelas" parent="menu_kelas" action="action_kelas" sequence="1"/>
+    <menuitem id="menu_guru" name="Guru" parent="menu_kelas" action="action_guru" sequence="2"/>
+
+    <!-- Menu Mata Pelajaran -->
+    <menuitem id="menu_mata_pelajaran" name="Mata Pelajaran" parent="menu_addons_sekolah_root" sequence="30"/>
+    <menuitem id="menu_mata_pelajaran_data" name="Mata Pelajaran" parent="menu_mata_pelajaran" action="action_mata_pelajaran" sequence="1"/>
+    <menuitem id="menu_jadwal" name="Jadwal" parent="menu_mata_pelajaran" action="action_jadwal" sequence="2"/>
+</odoo>
